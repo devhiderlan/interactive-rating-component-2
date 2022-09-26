@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(240, 56%, 4%);
+  font-family: 'Overpass', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  /* overflow: hidden; */
+}
+
+.container,
+.thank-you {
+  width: 375px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.star {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(213, 23%, 30%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star img {
+  width: 25px;
+  height: 25px;
+}
+
+.container h2 {
+  color: whitesmoke;
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+
+.container p {
+  color: hsl(216, 12%, 54%);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  width: 95%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(213, 23%, 30%);
+  color: whitesmoke;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #93cd20;
+}
+
+.btn:focus {
+  background-color: hsl(216, 12%, 54%);
+}
+
+.btn__submit {
+  width: 100%;
+  height: 2.8rem;
+  border: none;
+  border-radius: 30px;
+  color: whitesmoke;
+  background-color: #93cd20;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  transition: 0.3s;
+  margin-top: 0.5rem;
+}
+
+.btn__submit:hover {
+  background-color: whitesmoke;
+  color: #93cd20;
+  font-weight: bold;
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you img {
+  margin-bottom: 1.5rem;
+}
+
+.thank-you p.rating-choiced {
+  color: #93cd20;
+  background-color: hsl(213, 23%, 30%);
+  padding: 0.4rem 0.7rem .3rem;
+  border-radius: 25px;
+}
+
+.thank-you h2 {
+  color: whitesmoke;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.thank-you p {
+  color: hsl(216, 12%, 54%);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#rate-again {
+  letter-spacing: normal;
+}
+
+.hidden {
+  display: none;
+}
